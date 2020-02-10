@@ -1,1 +1,2 @@
 # htmlShowcase
+Examples using html, bootstrap, jquery, d3js
