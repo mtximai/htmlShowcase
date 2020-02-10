@@ -1,0 +1,63 @@
+
+<html lang="pt-br">
+   <head>
+       <!-- https://www.youtube.com/watch?v=vs34f9FiHps -->
+       <meta charset="UTF-8">
+       <title>Teste</title>
+
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   
+   </head>
+   <body>
+      <h3>Teste</h3>
+
+      <button onclick="f_teste()">Abrir modal</button>
+
+      <div class="modal fade" id="mdlAguarde" data-backdrop="static">
+         <div class="modal-dialog modal-sm">
+             <div class="modal-content">
+                 <div class="modal-header">
+                     <h4 class="modal-title">Processando...</h4>
+                 </div>
+                 <div class="modal-body">
+                     <img src="/images/loader.GIF" alt="Processando..." /> Processando... Aguarde!
+                 </div>
+             </div>
+         </div>
+     </div>
+
+     <div class="modal fade" id="mdlRetorno">
+         <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+               <div class="modal-header" style="text-align: center;">
+                     <h5 class="modal-title">Titulo</h5>
+               </div>
+               <div class="modal-body">
+               </div>
+            <div id="mdlPrincipalRodape" class="modal-footer">
+               <button type="button" id="btnModalCancelar" class="btn btn-default" data-dismiss="modal">Fechar</button>
+            </div>
+            </div>
+         </div>
+   </div>
+
+      <script type="text/javascript">
+
+         function f_teste() {
+            //$("#mdlAguarde").modal("show");
+
+            $("#mdlRetorno .modal-title").html("Gerenciador de arquivos");
+            $("#mdlRetorno .modal-body").html("Minha mensagem");
+            $("#mdlRetorno").modal("show");
+
+
+         }
+   
+      </script>
+
+
+   </body>
+</html>
